@@ -1,0 +1,369 @@
+/* ============================================================
+  0. VARIABLES
+  ------------------------------------------------------------
+  Couleurs, tailles, espacements, polices, etc.
+  Utilise :root pour les rendre accessibles partout.
+============================================================ */
+
+:root {
+  /* Couleurs */
+  --color-primary: #0077cc;
+  --color-secondary: #e0e0e0;
+  --color-text: #333;
+  --color-bg: #fff;
+
+  /* Typo */
+  --font-base: sans-serif;
+  --font-size-base: 1rem;
+
+  /* Espacements */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+
+  /* Border-radius */
+  --radius: 8px;
+}
+
+/* ============================================================
+  1. BASE
+  ------------------------------------------------------------
+  Ce sont les styles de "reset", polices, couleurs globales, 
+  liens, etc. (pas de BEM ici)
+============================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============================================================
+  2. LAYOUT
+  ------------------------------------------------------------
+  Structure de page : header, footer, main, sidebar...
+  Convention : préfixe `.l-` (l = layout)
+  Pas de BEM ici — ce sont des conteneurs structurels
+============================================================ */
+
+.l-main-container {
+  display: grid;
+  grid-template-areas:
+    ".        header    header    v-nav"
+    "social-m hey       hey       v-nav"
+    ".        about     about     v-nav"
+    ".        projects  projects  v-nav"
+    ".        contact   contact   v-nav"
+    ".        footer    footer    v-nav";
+  grid-template-columns: 1fr minmax(0,350px) minmax(0,350px) 1fr;
+  position: relative;
+}
+
+.l-header {
+  grid-area: header;
+  display: flex;
+  margin: 1rem;
+  border: 2px solid bleu;
+}
+
+.l-hey {
+  grid-area: hey;
+}
+
+.l-social-media-banner {
+  grid-area: social-m;
+  display: flex;
+  align-items: start;
+  min-height: 100vh;
+}
+.l-about-me {
+  grid-area: about;
+  height: 50px;
+}
+
+.l-projects {
+  grid-area: projects;
+  height: 50px;
+}
+
+.l-contact {
+  grid-area: contact;
+  height: 50px;
+}
+
+.l-footer {
+  grid-area: footer;
+  height: 50px;
+}
+
+.l-vertical-nav {
+  grid-area: v-nav;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  position: relative;
+}
+
+/* ============================================================
+  3. MODULES (composants réutilisables)
+  ------------------------------------------------------------
+  Boutons, cartes, formulaires, menus, etc.
+  Nom des classes en BEM : `.bloc`, `.bloc__élément`, `.bloc--modificateur`
+============================================================ */
+
+
+/* -----------------------------
+  3.00 Body
+  ------------------------------ */
+.social-media-bar {
+  position: sticky;
+  top: 30vh; /* ajuste pour le centrage vertical dans la section */
+  align-self: flex-start;
+  left: 0;
+  z-index: 10;
+  background: transparent;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: fit-content;
+}
+
+
+
+
+/* -----------------------------
+  3.10 Header 
+  ------------------------------ */
+
+/* logo-and-title */
+.logo-and-title {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-and-title__img-container {
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.logo-and-title__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.logo-and-title__title {
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+/* main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+
+}
+
+.main-nav__list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+
+/* -----------------------------
+  3.20 Hey 
+  ------------------------------ */
+.big-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 10rem 0;
+}
+
+.big-title__main-title,
+.big-title__sub-title {
+  text-align: center;
+}
+
+.big-title__main-title {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.big-title__sub-title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.big-title__button {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.8rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  border: solid 1px black;
+}
+
+/* -----------------------------
+  3.30 Social media vertical banner
+  ------------------------------ */
+
+  .vertical-banner {
+    border: solid 2px lightgrey;
+    border-radius: 0px 5px 5px 0px;
+    width: 50px;
+    position: sticky;
+    top: 35vh;
+    transform: translateY(-50%);
+    
+  }
+
+  .social-media-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 1rem 0;
+  }
+
+  i.fa-brands {
+    font-size: 1.5rem;
+    color: grey;
+  }
+
+
+/* -----------------------------
+  3.40 vertical navigation banner
+  ------------------------------ */
+
+
+  .vertical-nav__container {
+    border: solid 1px black;
+    width: 20px;
+    height: 50vh;
+    position: fixed;
+    top: 50px;
+
+  }
+  .vertical-nav__item {
+    list-style: none;
+  }
+
+  .vertical-nav__point {
+    background-color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+  .vertical-nav__list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+
+
+/* Exemple de carte projet */
+.project-card {
+  ...
+}
+
+.project-card__title {
+  ...
+}
+
+.project-card__description {
+  ...
+}
+
+.project-card--highlighted {
+  ...
+}
+
+/* Exemple de bouton */
+.btn {
+  ...
+}
+
+.btn--primary {
+  ...
+}
+
+.btn--large {
+  ...
+}
+
+/* Exemple de menu */
+.nav {
+  ...
+}
+
+.nav__item {
+  ...
+}
+
+.nav__link {
+  ...
+}
+
+.nav--horizontal {
+  ...
+}
+
+/* ============================================================
+  4. STATES (états visuels)
+  ------------------------------------------------------------
+  Visible/invisible, actif/inactif, etc.
+  Convention : `.is-*` ou `.has-*` (pas BEM)
+============================================================ */
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-active {
+  border: 2px solid blue;
+}
+
+.has-error {
+  color: red;
+}
+
+/* ============================================================
+  5. UTILITIES (classes utilitaires rapides)
+  ------------------------------------------------------------
+  Marges, paddings, text-align, etc. à usage ponctuel
+  Convention : `.u-*` (pas BEM)
+============================================================ */
+
+.u-mt-2 {
+  margin-top: 2rem;
+}
+
+.u-text-center {
+  text-align: center;
+}
+

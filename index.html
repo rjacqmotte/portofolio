@@ -9,7 +9,7 @@
   <!-- viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- link css and js -->
-  <link rel="stylesheet" href="css/reset.css">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <link rel="stylesheet" href="css/style.css">
   <script defer src="JS/script.js"></script>
   <!-- Fonts -->
@@ -19,52 +19,79 @@
 </head>
 
 <body>
-  <div id="main-container">
-    <header class="header">
-      <picture class="header__logo-and-title">
-        <img class="header__profile-picture" src="resources/media/photo profil 1.jpg" alt="profile picture">
-        <h1 class="header__profile-picutre-title">Renaud Jacqmotte</h1> 
+
+  <div class="l-main-container">
+
+    <header class="l-header">
+      <picture class="logo-and-title">
+        <div class="logo-and-title__img-container">
+          <img class="logo-and-title__img" src="resources/media/photo profil 1.jpg" alt="profile picture">
+        </div>
+        <h1 class="logo-and-title__title">Renaud Jacqmotte</h1>
       </picture>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-list-item">HOME</li>
-          <li class="header__nav-list-item">ABOUT</li>
-          <li class="header__nav-list-item">PROJECTS</li>
-          <li class="header__nav-list-item">CONTACT</li>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">HOME</li>
+          <li class="main-nav__list-item">ABOUT</li>
+          <li class="main-nav__list-item">PROJECTS</li>
+          <li class="main-nav__list-item">CONTACT</li>
         </ul>
       </nav>
     </header>
 
-    <section class="hey">
-      <h1 class="hey___main-title" >HEY, I'M RENAUD JACQMOTTE</h1>
-      <h2 class="hey__sub-title">A enthiousiastic Fullstack student who surfs his geek side to launch a new career.</h2>
-      <button class="hey__button">PROJECTS</button>
-      <picture class="hey__scroll-domn-picture"></picture>
-      <nav class="hey__social-media-icons">
-        <ul>
-          <nav class="hey__social-media-icons">
-  <ul>
-    <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-    <li><a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-    <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-    <li><a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-  </ul>
-</nav> 
-        </ul>
-      </nav>
-    </section> 
-    <section class="about-me">
+    <section class="l-social-media-banner">
+      <div class="vertical-banner">
+        <nav class="social-media-bar">
+          <ul>
+            <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="l-vertical-nav">
+      <div class="vertical-nav__container">
+        <nav class="vertical-nav">
+          <ul class="vertical-nav__list-items">
+            <li class="vertical-nav__item"><div class="vertical-nav__point"></div></li>
+            <li class="vertical-nav__item"><div class="vertical-nav__point"></div></li>
+            <li class="vertical-nav__item"><div class="vertical-nav__point"></div></li>
+            <li class="vertical-nav__item"><div class="vertical-nav__point"></div></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <section class="l-hey">
+      <div class="big-title">
+        <h1 class="big-title__main-title">HEY, I'M RENAUD JACQMOTTE</h1>
+        <h2 class="big-title__sub-title">A enthiousiastic Fullstack student who surfs his geek side to launch a new
+          career.
+        </h2>
+        <button class="big-title__button">PROJECTS</button>
+      </div>
+      <picture class="scroll-domn-picture"></picture>
+    </section>
+
+    
+
+    <section class="l-about-me">
       <section class="about-me__knowing-me"></section>
       <section class="about-me__my-skills"></section>
     </section>
-    <section class="projects"></section>
-    <section class="contact"></section>
-    <footer class="footer">
+
+    <section class="l-projects"></section>
+
+    <section class="l-contact"></section>
+
+    <footer class="l-footer">
       <div class="footer__slogan"></div>
       <nav class="footer__social-media"></nav>
       <div id="footer__copyrigth"></div>
     </footer>
-  </div>
-</body>
 
-</html>
+  </div>
+</bo
