@@ -236,7 +236,7 @@ a {
     border-radius: 0px var(--radius) var(--radius) 0px;
     width: 50px;
     position: sticky;
-    top: 35vh;
+    top: 50vh;
     transform: translateY(-50%);
     
   }
