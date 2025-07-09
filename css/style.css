@@ -51,6 +51,25 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+}
+
 /* ============================================================
   2. LAYOUT
   ------------------------------------------------------------
@@ -65,6 +84,7 @@ a {
     ".        header    header    v-nav"
     "social-m hey       hey       v-nav"
     ".        about     about     v-nav"
+    ".        know-me   skills    v-nav"
     ".        projects  projects  v-nav"
     ".        contact   contact   v-nav"
     ".        footer    footer    v-nav";
@@ -91,7 +111,18 @@ a {
 }
 .l-about-me {
   grid-area: about;
-  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.l-knowing-me {
+  grid-area: know-me;
+}
+
+.l-my-skills {
+  grid-area: skills;
 }
 
 .l-projects {
@@ -203,18 +234,8 @@ a {
   margin: 10rem 0;
 }
 
-.big-title__main-title,
-.big-title__sub-title {
-  text-align: center;
-}
-
-.big-title__main-title {
-  font-size: 4rem;
-  font-weight: 400;
-}
-
-.big-title__sub-title {
-  font-size: 2rem;
+.sub-title {
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -227,9 +248,8 @@ a {
   border: solid 1px black;
 }
 
-/* -----------------------------
-  3.30 Social media vertical banner
-  ------------------------------ */
+/* 3.21 Social media vertical banner
+   ------------------------------ */
 
   .vertical-banner {
     border: solid 2px var(--color-secondary);
@@ -256,8 +276,7 @@ a {
   }
 
 
-/* -----------------------------
-  3.40 vertical navigation banner
+/* vertical navigation banner
   ------------------------------ */
 
 
@@ -295,7 +314,14 @@ a {
     height: 10px;
   }
 
-
+/* About me
+----------- */
+.divider {
+  height: 0.3rem;
+  width: 5rem;
+  border-radius: var(--radius);
+  background-color: var(--color-secondary);
+}
 
 
 
