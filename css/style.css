@@ -91,7 +91,7 @@ p {
     ".        footer    footer    v-nav";
   grid-template-columns: 1fr 4fr 4fr 1fr;
   position: relative;
-  gap: 1rem;
+  gap: 1.618vw;
 }
 
 .l-header {
@@ -206,10 +206,6 @@ p {
   display: block;
 }
 
-.logo-and-title__title {
-  font-size: 1rem;
-  font-weight: 650;
-}
 
 /* main-nav */
 .main-nav {
@@ -225,7 +221,11 @@ p {
   list-style: none;
 }
 
-
+.text-header {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
 /* -----------------------------
   3.20 Hey 
   ------------------------------ */
@@ -251,6 +251,7 @@ p {
   border-radius: 1rem;
   border: solid 1px black;
   text-transform: uppercase;
+  background-color: var(--color-secondary);
 }
 
 /* 3.21 Social media vertical banner
@@ -351,9 +352,9 @@ p {
 }
 
 .skill-item {
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius);
   background-color: var(--color-secondary);
 }
 
