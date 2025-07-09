@@ -89,8 +89,9 @@ p {
     ".        projects  projects  v-nav"
     ".        contact   contact   v-nav"
     ".        footer    footer    v-nav";
-  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-columns: 1fr 4fr 4fr 1fr;
   position: relative;
+  gap: 1rem;
 }
 
 .l-header {
@@ -328,14 +329,32 @@ p {
   background-color: var(--color-secondary);
 }
 
-/* 3.31 Knowing me
------------------- */
 .container {
   margin: calc(2*1.618vw) 0;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: calc(1.618*2vw);
+}
+
+/* 3.31 Knowing me
+   --------------- */
+
+
+/* 3.32 Skills
+  ------------ */
+.skills-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-secondary);
 }
 
 
