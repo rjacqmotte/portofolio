@@ -67,7 +67,8 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
 }
 
 /* ============================================================
@@ -88,7 +89,7 @@ p {
     ".        projects  projects  v-nav"
     ".        contact   contact   v-nav"
     ".        footer    footer    v-nav";
-  grid-template-columns: 1fr minmax(0,350px) minmax(0,350px) 1fr;
+  grid-template-columns: 10% 40% 40% 10%;
   position: relative;
 }
 
@@ -115,6 +116,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin: calc(1.618*3vw) 0;
 }
 
 .l-knowing-me {
@@ -232,6 +234,7 @@ p {
   align-items: center;
   gap: 2rem;
   margin: 10rem 0;
+  margin-top: 16.18vw;
 }
 
 .sub-title {
@@ -239,13 +242,14 @@ p {
   font-weight: 300;
 }
 
-.big-title__button {
+.big-button {
   font-size: 1rem;
   font-weight: 300;
   padding: 0.8rem;
   margin: 2rem 0;
   border-radius: 1rem;
   border: solid 1px black;
+  text-transform: uppercase;
 }
 
 /* 3.21 Social media vertical banner
@@ -313,14 +317,25 @@ p {
     width: 10px;
     height: 10px;
   }
-
-/* About me
------------ */
+  
+/* -------------- 
+  3.30 About me
+--------------- */
 .divider {
   height: 0.3rem;
   width: 5rem;
   border-radius: var(--radius);
   background-color: var(--color-secondary);
+}
+
+/* 3.31 Knowing me
+------------------ */
+.container {
+  margin: calc(2*1.618vw) 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: calc(1.618*2vw);
 }
 
 
@@ -405,4 +420,6 @@ p {
 .u-text-center {
   text-align: center;
 }
-
+.u-align-self-center {
+  align-self: center;
+}
