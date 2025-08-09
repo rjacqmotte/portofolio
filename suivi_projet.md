@@ -2,6 +2,7 @@
 
 ## A faire
 * corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
+* changer section.l-vertical-nav- par nav. ... ?
 
 ## optionnel
 
