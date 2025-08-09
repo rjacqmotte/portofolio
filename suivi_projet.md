@@ -9,11 +9,12 @@
 
 
 ## en cours
-* script pour activer les point de la barre de navigation vertical avec les titre h2
+* script pour activer les point de la barre de navigation vertical avec les titre h2 (finalement avec .nav-page)
+* continuer et debugger le script pour la barre de nav
 
 
 ## fini
 
 * restructuration du layout de la page pour utiliser la grille poir centrer. de cette façon, je peux valoriser les marges pour ajouter du contenu.
 * faire une barre latérale avec les icones de réseaux sociaux
-* barre de navigation dans la page verticale avec des gros point, première mise en page.
+* barre de navigation dans la page verticale avec des gros point, première mis
