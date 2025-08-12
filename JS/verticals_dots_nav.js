@@ -1,24 +1,24 @@
-// chaque section est représentée par un point sur la bar latéral.
-// met en évidence les points de la barre de navigation correspondant à la section lorsqu'on scroll et on navigue sur la page.
+// Each section is represented by a dot on the side bar.
+// Highlights the navigation dots corresponding to the section when scrolling and navigating the page.
 
 
 // --------------------------------------------------
 // Variables
-//---------------------------------------------------
+// --------------------------------------------------
 
 
-// définition des variables qui pointent les objets du DOM grâce au repère .nav_page
+// Definition of variables that point to DOM objects using the .nav_page selector
 const arrayOfNavPage = document.getElementsByClassName("nav-page");
 console.log(arrayOfNavPage);
 
-// définition des variables qui pointent les point de navigation
+// Definition of variables that point to the navigation dots
 const arrayOfDotsNav = document.getElementsByClassName("vertical-nav__point");
 console.log(arrayOfDotsNav);
 
-// variable de throttle pour l'écouteur évenement scroll
+// Throttle variable for the scroll event listener
 let isThrottled = false;
 
-// pour test et debug
+// For testing and debugging
 let scrollCount = 0;
 
 
@@ -26,9 +26,9 @@ let scrollCount = 0;
 
 // --------------------------------------------------
 // Functions
-//---------------------------------------------------
+// --------------------------------------------------
 
-// fonction que reset les dots
+// Reset the dots
 const resetDots = () => {
     Array.from(arrayOfDotsNav).forEach(dot => {
         dot.style.backgroundColor = "lightgrey";
@@ -37,65 +37,67 @@ const resetDots = () => {
     })
 }
 
-// fonction qui modifie le point correspondant
+// Modify the corresponding dot
 const makeBigger = (element) => {
     element.style.backgroundColor = "black";
     element.style.width = "12px";
     element.style.height = "12px";
 };
 
-// fonction qui caclule et retourne l'index de l'élément le plus proche du haut de la page. prend un array d'élément.
+// Calculates and returns the index of the element closest to the top of the page. Takes an array of elements.
 const nearestFromTheTop = (arrayOfElements) => {
-    
-    // créé une array des distances par rapport au haut de la page pour chaque éléments
+
+    // Creates an array of distances from the top of the page for each element
     let arrayOfDistance = [];
-    Array.from(arrayOfElements).forEach(element => { 
+    Array.from(arrayOfElements).forEach(element => {
         let infoObject = element.getBoundingClientRect();
         arrayOfDistance.push(infoObject.top);
     })
     console.log(arrayOfDistance);
 
-    // selectione l'élément visible le plus proche du haut de l'écran
-    // comme les éléments sont trié naturellement dans l'ordre de la page,
-    // il suffit de trouver le premier élèment non négatif.
+    // Selects the visible element closest to the top of the screen
+    // As the elements are naturally sorted in the order of the page,
+    // it is enough to find the first non-negative element.
     return arrayOfDistance.findIndex(element => element > 0);
 }
 
-// reset la mise enpage des points, mets en évidences le bon point, gère le throttle
+// Resets the dots layout, highlights the correct dot, manages the throttle
 const changeDot = () => {
-    // pour le débuggage
-    
+    // For debugging
     console.log(`--- Fonction activée : ${scrollCount} --- `);
-    
+
     resetDots();
     const navPageIndex = nearestFromTheTop(arrayOfNavPage);
-    makeBigger(arrayOfDotsNav[navPageIndex]);
+    if (navPageIndex >= 0) {
+        makeBigger(arrayOfDotsNav[navPageIndex])
+    };
 
-    //reset le throttle
+    // Resets the throttle
     isThrottled = false;
-};  
+};
 
 
 // --------------------------------------------------
 // Main
-//---------------------------------------------------
+// --------------------------------------------------
 
-// test
+// Test
 console.log(nearestFromTheTop(arrayOfNavPage));
 console.log(arrayOfNavPage[nearestFromTheTop(arrayOfNavPage)]);
 
-// gestion des évenements
+// Event handling
 window.addEventListener("scroll", (event) => {
-    
-    console.log(`Scroll détecter : ${scrollCount}`);
-    scrollCount++;
 
-    //mise en place d'un "throttle" pour limiter l'activation du code par les scroll event 
-    // test du throttle, on quitte la boucle si actif.
-    if(isThrottled) return;
+    scrollCount++;
+    console.log(`Scroll détecter : ${scrollCount}`);
+
+
+    // Set up a "throttle" to limit code activation by scroll events
+    // Throttle test, exit the loop if active.
+    if (isThrottled) return;
     isThrottled = true;
-    //mise en route du timer.
+    // Start the timer.
     setTimeout(changeDot, 300);
-    
+
 })
 
