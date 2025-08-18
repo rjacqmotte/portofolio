@@ -3,7 +3,7 @@
 
 
 // --------------------------------------------------
-// Variables
+// VARIABLES
 // --------------------------------------------------
 
 // element container ul de la barre de navigation
@@ -14,10 +14,8 @@ const arrayOfNavPage = document.getElementsByClassName("nav-page");
 console.log(`arrayOfNavPage is "${arrayOfNavPage}"`);
 console.log(arrayOfNavPage);
 
-// Definition of variables that point to the navigation dots
-let arrayOfDotsNav = document.getElementsByClassName("vertical-nav__point");
-console.log(`arrayOfDotsNav is "${arrayOfDotsNav}"`);
-console.log(arrayOfDotsNav);
+// Definition of variables that point to the navigation dots, will be created and defined in main
+let arrayOfDotsNav;
 
 // Throttle variable for the scroll event listener
 let isThrottled = false;
@@ -29,24 +27,11 @@ let scrollCount = 0;
 
 
 // --------------------------------------------------
-// Functions
+// FUNCTIONS
 // --------------------------------------------------
 
-// Reset the dots
-const resetDots = () => {
-    Array.from(arrayOfDotsNav).forEach(dot => {
-        dot.style.backgroundColor = "lightgrey";
-        dot.style.width = "10px";
-        dot.style.height = "10px";
-    })
-}
-
-// Modify the corresponding dot
-const makeBigger = (element) => {
-    element.style.backgroundColor = "black";
-    element.style.width = "12px";
-    element.style.height = "12px";
-};
+// Calcul du nombre de dots
+// --------------------------------------------------
 
 // Calculates and returns the index of the element closest to the top of the page. Takes an array of elements.
 const nearestFromTheTop = (arrayOfElements) => {
@@ -65,23 +50,8 @@ const nearestFromTheTop = (arrayOfElements) => {
     return arrayOfDistance.findIndex(element => element > 0);
 }
 
-// Resets the dots layout, highlights the correct dot, manages the throttle
-const changeDot = () => {
-    // For debugging
-    console.log(`--- Fonction activée : ${scrollCount} --- `);
-
-    resetDots();
-    const navPageIndex = nearestFromTheTop(arrayOfNavPage);
-    if (navPageIndex >= 0) {
-        makeBigger(arrayOfDotsNav[navPageIndex])
-    };
-
-    // Resets the throttle
-    isThrottled = false;
-};
-
-
-// compte le nombre de point à ajouter à la barre de navigation
+// Création des dots
+// --------------------------------------------------
 
 // reset et vide le container de la barre de navigation
 const resetVerticalNav = () => {
@@ -108,11 +78,56 @@ const createDots = (numberOfDots) => {
     }    
 };
 
-// --------------------------------------------------
-// Main
+// retourne l'array de dot
+const getDotsNav = () => document.getElementsByClassName("vertical-nav__point");
+
+
+// Modification des dots
 // --------------------------------------------------
 
-// Test
+// Reset la mise en page par défaut des dots
+const resetDots = () => {
+    Array.from(arrayOfDotsNav).forEach(dot => {
+        dot.style.backgroundColor = "lightgrey";
+        dot.style.width = "10px";
+        dot.style.height = "10px";
+    })
+}
+
+// Modify la mise en page du dot à mettre en avant
+const makeBigger = (element) => {
+    element.style.backgroundColor = "black";
+    element.style.width = "12px";
+    element.style.height = "12px";
+};
+
+// fonction callback pour l'écouter d'évenement scroll.
+// mets en avant le bon dots. 
+// Resets the dots layout, highlights the correct dot, manages the throttle.
+const changeDot = () => {
+    // For debugging
+    console.log(`--- Fonction activée : ${scrollCount} --- `);
+
+    resetDots();
+    const navPageIndex = nearestFromTheTop(arrayOfNavPage);
+    if (navPageIndex >= 0) {
+        makeBigger(arrayOfDotsNav[navPageIndex])
+    };
+
+    // Resets the throttle
+    isThrottled = false;
+};
+
+
+
+
+// --------------------------------------------------
+// MAIN
+// --------------------------------------------------
+
+// Test et debug
+// --------------------------------------------------
+
 console.log(nearestFromTheTop(arrayOfNavPage));
 console.log(arrayOfNavPage[nearestFromTheTop(arrayOfNavPage)]);
 
@@ -122,14 +137,20 @@ console.log(arrayOfNavPage.length);
 
 
 // Création dynamique des point de la barre verticale de navigation
+// --------------------------------------------------
+
 resetVerticalNav();
 createDots(arrayOfNavPage.length);
+arrayOfDotsNav = getDotsNav();
 
-arrayOfDotsNav = document.getElementsByClassName("vertical-nav__point");
 console.log(`arrayOfDotsNav is "${arrayOfDotsNav}"`);
 console.log(arrayOfDotsNav);
 
-// Event handling
+
+
+// Event handling - scroll
+// --------------------------------------------------
+
 window.addEventListener("scroll", (event) => {
 
     scrollCount++;
