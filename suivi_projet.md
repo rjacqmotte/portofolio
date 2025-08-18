@@ -9,7 +9,7 @@
 
 
 ## en cours
-* ajouter un throttle au script du nav dot bar
+* continuer la fonction create dots.
 
 
 ## fini
@@ -19,3 +19,4 @@
 * barre de navigation dans la page verticale avec des gros point, première mis
 * continuer et debugger le script pour la barre de nav
 * script pour activer les point de la barre de navigation vertical avec les titre h2 (finalement avec .nav-page)    
+* ajouter un throttle au script du nav dot bar

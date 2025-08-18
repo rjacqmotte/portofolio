@@ -6,13 +6,17 @@
 // Variables
 // --------------------------------------------------
 
+// element container ul de la barre de navigation
+const containerVerticalNav = document.body.querySelector("ul.vertical-nav__list-items");
 
 // Definition of variables that point to DOM objects using the .nav_page selector
 const arrayOfNavPage = document.getElementsByClassName("nav-page");
+console.log(`arrayOfNavPage is "${arrayOfNavPage}"`);
 console.log(arrayOfNavPage);
 
 // Definition of variables that point to the navigation dots
-const arrayOfDotsNav = document.getElementsByClassName("vertical-nav__point");
+let arrayOfDotsNav = document.getElementsByClassName("vertical-nav__point");
+console.log(`arrayOfDotsNav is "${arrayOfDotsNav}"`);
 console.log(arrayOfDotsNav);
 
 // Throttle variable for the scroll event listener
@@ -77,6 +81,33 @@ const changeDot = () => {
 };
 
 
+// compte le nombre de point à ajouter à la barre de navigation
+
+// reset et vide le container de la barre de navigation
+const resetVerticalNav = () => {
+    containerVerticalNav.innerHTML = "";
+};
+
+// ajoute des points dans la barre de navigation
+//      1. crée li.vertical-nav__item à ajouter à ul.vertical-nav__list-item
+//      2. crée div.vertical-nav__point à ajouter à li.vertical-nav__item
+const createDots = (numberOfDots) => {
+    const arrayOfDotsCont = [];
+    const arrayOfDots = [];
+    
+    for (let i = 0; i < numberOfDots; i++) {
+        const li = document.createElement("li");
+        li.classList.add("vertical-nav__item");
+        li.setAttribute("data-dot-index", i);
+
+        const dot = document.createElement("div");
+        dot.classList.add("vertical-nav__point");
+        
+        containerVerticalNav.appendChild(li);
+        li.appendChild(dot);
+    }    
+};
+
 // --------------------------------------------------
 // Main
 // --------------------------------------------------
@@ -84,6 +115,19 @@ const changeDot = () => {
 // Test
 console.log(nearestFromTheTop(arrayOfNavPage));
 console.log(arrayOfNavPage[nearestFromTheTop(arrayOfNavPage)]);
+
+console.log("-----------------------");
+console.log("arrayOfNavPage.length is");
+console.log(arrayOfNavPage.length);
+
+
+// Création dynamique des point de la barre verticale de navigation
+resetVerticalNav();
+createDots(arrayOfNavPage.length);
+
+arrayOfDotsNav = document.getElementsByClassName("vertical-nav__point");
+console.log(`arrayOfDotsNav is "${arrayOfDotsNav}"`);
+console.log(arrayOfDotsNav);
 
 // Event handling
 window.addEventListener("scroll", (event) => {
