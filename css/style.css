@@ -46,6 +46,13 @@ body {
   background-color: #fff;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -87,7 +94,7 @@ p {
   display: grid;
   grid-template-areas:
     ".        header    header    v-nav"
-    "social-m hey       hey       v-nav"
+    "social-m banner    banner    v-nav"
     ".        about     about     v-nav"
     ".        know-me   skills    v-nav"
     ".        projects  projects  v-nav"
@@ -98,6 +105,7 @@ p {
   gap: 1.618vw;
 }
 
+/* MAIN HEADER --------- */
 .l-header {
   grid-area: header;
   display: flex;
@@ -105,23 +113,29 @@ p {
   border: 2px solid bleu;
 }
 
-.l-hey {
-  grid-area: hey;
-}
-
+/* VERTICALS MENUS ----- */
 .l-social-media-banner {
   grid-area: social-m;
   display: flex;
   align-items: start;
   min-height: 100vh;
 }
+
+.l-vertical-nav {
+  grid-area: v-nav;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  position: relative;
+}
+
+/* SECTION FLOW -------- */
+.l-banner {
+  grid-area: banner;
+}
+
 .l-about-me {
   grid-area: about;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin: calc(1.618*3vw) 0;
 }
 
 .l-knowing-me {
@@ -142,18 +156,13 @@ p {
   height: 50px;
 }
 
+/* FOOTER --------------- */
 .l-footer {
   grid-area: footer;
   height: 50px;
 }
 
-.l-vertical-nav {
-  grid-area: v-nav;
-  display: flex;
-  justify-content: end;
-  align-items: start;
-  position: relative;
-}
+
 
 
 /* ============================================================
@@ -255,13 +264,32 @@ p {
 /* -----------------------------
   3.20 Hey 
   ------------------------------ */
-.big-title {
+
+/* banner-title */
+  .banner-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
   margin: 10rem 0;
   margin-top: 16.18vw;
+}
+
+.banner-title__title {
+
+}
+
+.banner-title__divider {
+  height: 0.3rem;
+  width: 5rem;
+  border-radius: var(--radius);
+  background-color: var(--color-secondary);
+}
+
+.banner-title__sub-title {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
 }
 
 

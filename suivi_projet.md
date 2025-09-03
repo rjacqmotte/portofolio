@@ -5,7 +5,7 @@
 * changer section.l-vertical-nav- par nav. ... ?
 * organiser et corriger les barre icon et les verticals nav dot point, ils doivent être dans des nav et pas des section!!! attention à l'impacte du css et du script js!
 * cooriger et vérifier utilisation de .container
-* vérifier cohérence dans le banner, première section. rendre le module banner de la première section bien autonome.
+
 
 
 ## optionnel
@@ -13,6 +13,7 @@
 
 
 ## en cours
+* vérifier cohérence dans le banner, première section. rendre le module banner de la première section bien autonome.
 * section project
     * layout de la gallery;
     * item de la gallery;
