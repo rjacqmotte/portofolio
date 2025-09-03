@@ -3,6 +3,9 @@
 ## A faire
 * corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
 * changer section.l-vertical-nav- par nav. ... ?
+* organiser et corriger les barre icon et les verticals nav dot point, ils doivent être dans des nav et pas des section!!! attention à l'impacte du css et du script js!
+* cooriger et vérifier utilisation de .container
+* vérifier cohérence dans le banner, première section. rendre le module banner de la première section bien autonome.
 
 
 ## optionnel
@@ -10,6 +13,10 @@
 
 
 ## en cours
+* section project
+    * layout de la gallery;
+    * item de la gallery;
+    * mise en page basique dans les items de la gallery;
 
 
 
@@ -24,3 +31,4 @@
 * continuer la fonction create dots.
 * relir et mettre au propre verticals_dots_nav.js, effacer les console.log unitile.
 * bien tout traduire en anglais dans navdots.js
+* créer et difinir proprement le module de titre (titre, bare de séparation et sous-titre)

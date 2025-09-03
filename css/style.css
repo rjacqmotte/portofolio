@@ -183,7 +183,28 @@ p {
   }
 */
 
+/* Section-title */
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
+.section-title__title {}
+
+.section-title__divider {
+  height: 0.3rem;
+  width: 5rem;
+  border-radius: var(--radius);
+  background-color: var(--color-secondary);
+}
+
+.section-title__sub-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
 
 
 /* -----------------------------
@@ -243,10 +264,7 @@ p {
   margin-top: 16.18vw;
 }
 
-.sub-title {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
+
 
 .big-button {
   font-size: 1rem;
@@ -328,12 +346,7 @@ p {
 /* -------------- 
   3.30 About me
 --------------- */
-.divider {
-  height: 0.3rem;
-  width: 5rem;
-  border-radius: var(--radius);
-  background-color: var(--color-secondary);
-}
+
 
 .container {
   margin: calc(2*1.618vw) 0;
