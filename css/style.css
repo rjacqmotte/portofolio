@@ -393,53 +393,61 @@ i.fa-brands {
   background-color: var(--color-secondary);
 }
 
-
-
-/* Exemple de carte projet */
-.project-card {
-  ...
+/* Gallery */
+.gallery__grid-container {
+  width: 100%;
 }
 
-.project-card__title {
-  ...
+.gallery__list-items {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style: none;
 }
 
-.project-card__description {
-  ...
+.gallery__item {
+  height: 500px;
+  border: solid 1px var(--color-secondary);
+  border-radius: var(--radius);
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
 }
 
-.project-card--highlighted {
-  ...
+.gallery__title-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Exemple de bouton */
-.btn {
-  ...
+.gallery__img-container {
+  flex: 2;
+  overflow: hidden;
+
 }
 
-.btn--primary {
-  ...
+.gallery__img-container img {
+  max-width: auto;
+  height: 100%;
+  display: block;
 }
 
-.btn--large {
-  ...
+.gallery__info {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
 }
 
-/* Exemple de menu */
-.nav {
-  ...
-}
-
-.nav__item {
-  ...
-}
-
-.nav__link {
-  ...
-}
-
-.nav--horizontal {
-  ...
+.gallery__info p {
+  margin: 1rem;
 }
 
 /* ============================================================
