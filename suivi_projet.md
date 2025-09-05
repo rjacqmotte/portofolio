@@ -14,11 +14,9 @@
 * navigation dans la page à partir des points de navigation: cliquer sur un point amène au bon endroits de la page
 
 
-## en cours
-* section project
-    * layout de la gallery;
-    * item de la gallery;
-    * mise en page basique dans les items de la gallery;
+## en cours (branche porject-galery-in-row)
+* créer une grille de projet comme sam mahalawi. un projet par ligne dans des petites grilles.
+
 
 
 
@@ -44,4 +42,8 @@
 * cooriger et vérifier utilisation de .container
 * margin ou gap sur les titre de seection
 * margin ou gap sur les sections
+* section project
+    * layout de la gallery;
+    * item de la gallery;
+    * mise en page basique dans les items de la gallery;
 
