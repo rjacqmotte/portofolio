@@ -9,6 +9,9 @@
 * rendre fixe vertical nav icon
 
 * vérifier logique de classe css avec smacc
+* se renseigner sur les mock up, mettre un e image dans un pc ou téléphone pour présenter les applications
+* soigné la mise en page, choisir couluer et police, mettre des petites animations et transition, gérer les ::hover... etc...
+* corriger le titre bannière qui n'est pas centré
 
 
 ## optionnel
