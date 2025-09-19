@@ -8,6 +8,7 @@
 
 * rendre fixe vertical nav icon
 
+* vérifier logique de classe css avec smacc
 
 
 ## optionnel
