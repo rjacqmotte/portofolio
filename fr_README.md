@@ -1,62 +1,92 @@
-# Renaud's Portofolio
+# Renaud's Portfolio
 
-V090825-14:20
-Comme je suis francophone, le fichier fr_README.md est succeptible d'être le plus à jour.
+V190925-12:06  
+Comme je suis francophone, le fichier fr_README.md est susceptible d'être le plus à jour.
 
-## Descritpion
-A codeacademia project. It's a Fullstack student portofolio. I copy the Ram Maheshawri's portofolio site structre (not the code) for training, using CSS, HTML et JS.
+## Description
+A Codeacademia project. It's a Fullstack student portfolio. I copied the structure (not the code) of Ram Maheshwari's portfolio site for training, using CSS, HTML et JS.
 
-## Features
-### Barre de navigation verticale à point
-Pour aider l'utilisateur à voir ou il en est dans la navigation de la page. Chaque point représente un h2. le h2 le plus proche du haut de la fenêtre active le point correspondant pour le mettre en valeur avec un script js.
-le script calcule à chaque scroll event les distances de chaques h2 par rapport au haut de la fenêtre avec "getBoundingClientRect()". le h2 le plus proche du haut de la fenêtre à son point correspondant qui est mis en valeur.
-les points sont mis à la main de façon statique.
+## Fonctionnalités
 
-amélioration possible 
-[] 1: rendre la mise en page et le nombre de point dynamique. Le script pourrait calculer tout seul le nombre de h2 et afficher automatiquement les points.
-[] 2: rendre la barre latérale interactive pour permettre à l'utilisateur de naviguer dans la page.
+### Barre de navigation verticale à points
+Pour aider l'utilisateur à voir où il en est dans la navigation de la page. Chaque point représente un h2. Le h2 le plus proche du haut de la fenêtre active le point correspondant pour le mettre en valeur avec un script JS.
+Le script calcule à chaque événement de scroll les distances de chaque h2 par rapport au haut de la fenêtre avec "getBoundingClientRect()". Le h2 le plus proche du haut de la fenêtre a son point correspondant mis en valeur.
+Les points sont ajoutés manuellement de façon statique.
 
+Améliorations possibles :
+- [ ] 1 : rendre la mise en page et le nombre de points dynamiques. Le script pourrait calculer tout seul le nombre de h2 et afficher automatiquement les points.
+- [ ] 2 : rendre la barre latérale interactive pour permettre à l'utilisateur de naviguer dans la page.
 
+### Barre d'icônes verticale de réseaux sociaux
+À venir.
 
-### Barre d'icone verticale de réseau sociaux
+## Choses apprises
 
-will come
+### Structure CSS : BEM et SMACSS
+Comme je ne sais jamais trop comment structurer une feuille CSS correctement, j'ai fait quelques recherches. J'ai choisi d'utiliser BEM combiné à SMACSS (en discutant avec l'IA sur les bonnes pratiques utilisées).
 
-## choses apprises
-### CSS strucuture: BEM and SMACCS
-comme je ne sais jamais trop comment strucutrer un feuille css correctement, j'ai fais quelques recherches. j'ai choisi d'utiliser BEM combiné à SMACCS. (en papotant avec l'IA sur les bonne pratiques utilisée)
-
-#### SMACCS
-Smaccs permet de définir des catégories importantes de type de css et de bien les conscientiser et les séparer. 
+#### SMACSS
+SMACSS permet de définir des catégories importantes de types de CSS et de bien les conscientiser et les séparer.
 1. Base
 2. Layout
 3. Modules => utilisation de BEM
 4. States
 
-à cela j'ai ajouté:
-
+À cela, j'ai ajouté :
 0. Variables
 5. Utilities
 
-J'ai utilisé (en tout cas essyé) les spécification de SMACCS pour nommer les classes. sauf pour les modules ou j'ai utiliser BEM.  
+J'ai utilisé (ou du moins essayé) les spécifications de SMACSS pour nommer les classes, sauf pour les modules où j'ai utilisé BEM.
 
-il est conseillé de faire un page css par catégorie. comme c'est un petit site j'ai tout mis dans une seule.
+Il est conseillé de faire une page CSS par catégorie. Comme c'est un petit site, j'ai tout mis dans une seule.
 
 #### BEM
-pour Block-Element-Modifer. C'est une méthode pour nommer clairement les classes. il utilise pas de ID d'ailleurs... je vous laisse faire une recherche pour avoir plus de détails.
+Pour Block-Element-Modifier. C'est une méthode pour nommer clairement les classes. Il n'utilise pas d'ID d'ailleurs... Je vous laisse faire une recherche pour avoir plus de détails.
 Je l'ai utilisé uniquement pour les modules SMACSS.
 
-### grid template
-je voulais essayé le grid pour le découvrir une première fois. Utilisation de grid-template-areas pour strucutré tout la page. même si ce n'est pas spécialement nécessaire dans cette sitaution, cela m'a permis de faire une révidion ; )
+#### Retours sur la structuration du CSS
+C'est peut-être un peu compliqué et confus... Je vais repasser là-dessus en fin de projet pour être sûr d'être cohérent. C'est important que je fasse un retour ici en fin de projet pour savoir si je continue comme cela.
+
+### Grid template
+Je voulais essayer le grid pour le découvrir une première fois. Utilisation de grid-template-areas pour structurer toute la page. Même si ce n'est pas spécialement nécessaire dans cette situation, cela m'a permis de faire une révision.
+
+J'ai utilisé grid également au niveau des éléments des list items dans la section "my projects". J'espère parvenir à gérer élégamment l'aspect responsive de cette façon.
+
+### Flex
+Je suis débutant et étudiant. Pour moi, c'est toujours important de découvrir la puissance du Flex. Je l'utilise un peu partout, c'est vraiment pratique.
+
+### Design et mise en page
+Dans un premier temps, j'ai travaillé en noir, blanc et gris. La police et les couleurs étant basiques pour créer le layout de base... c'est plutôt moche. Mais c'est pratique pour la lisibilité et la structure de la mise en page le temps que je finisse le template. Je repasserai dessus dans un deuxième temps. Je prêterai attention à l'accessibilité par la même occasion.
+
+### Accessibilité
+Dans un premier temps, je m'efforce d'utiliser les balises HTML les plus appropriées. Je demande à l'IA si j'hésite. Je parcourrai la checklist du WCAG par après.
+
+### Icônes
+Tout bête et très satisfaisant, j'ai découvert comment utiliser et intégrer des icônes :)  
+Voir dans la section "social media banner".
+
+### Responsive
+Dans un premier temps, je fais le design pour un écran d'ordinateur. Je suis confus sur les méthodes à utiliser. En effet, j'ai lu en partie "Refactoring UI" et il conseille d'autres choses que celles que j'ai mises en place.
+1. Travail avec rem pour les marges, le padding et la taille des polices.
+2. Utilisation de vw ou de % pour les espaces de type layout... Je verrai si je conserve cela.
+3. Utilisation de grid et flex qui naturellement gèrent le responsive.
+Mais je verrai après si je ferai des modifications. Je reste très curieux de me replonger dans "Refactoring UI" pour mettre en pratique une bonne méthode de travail.
+Retours à donner !!!
+
+#### Retours sur le responsive
+=> Plus tard, penser à donner un retour sur la méthode utilisée après la lecture de "Refactoring UI".
+
+### Script de navigation dot point
+Là, ça m'a pris beaucoup de temps, mais j'ai beaucoup appris. J'ai pu pratiquer et bien comprendre comment sélectionner et modifier les nodes dans le DOM. Essentiel...
 
 ## How to use
-to be define
+À définir
 
 ## Technologies
 CSS, HTML, JS
 
-## Colaborators
-As exercice, I copy the Ram Maheshwari's portofolio site https://www.rammaheshwari.com/
+## Collaborateurs
+Exercice : J'ai copié la structure du site portfolio de Ram Maheshwari https://www.rammaheshwari.com/
 
 ## Licences
-to be define
+À définir

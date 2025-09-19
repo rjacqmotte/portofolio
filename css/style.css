@@ -73,6 +73,18 @@ p {
   line-height: 1.2;
 }
 
+button {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.8rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  border: solid 1px black;
+  text-transform: uppercase;
+  background-color: var(--color-secondary);
+  width: min-content;
+}
+
 /* ============================================================
   2. LAYOUT
   ------------------------------------------------------------
@@ -223,6 +235,10 @@ p {
   text-align: center;
 }
 
+/* button */
+.button--no-margin {
+  margin: 0;
+}
 
 /* -----------------------------
   3.10 Header 
@@ -301,16 +317,7 @@ p {
 
 
 
-.big-button {
-  font-size: 1rem;
-  font-weight: 300;
-  padding: 0.8rem;
-  margin: 2rem 0;
-  border-radius: 1rem;
-  border: solid 1px black;
-  text-transform: uppercase;
-  background-color: var(--color-secondary);
-}
+
 
 /* 3.21 Social media vertical banner
    ------------------------------ */
