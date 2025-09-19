@@ -3,28 +3,23 @@
 ## A faire
 * corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
 * changer section.l-vertical-nav- par nav. ... ?
-
-
-
 * rendre fixe vertical nav icon
+* section contact
 
-
-
-* soigné la mise en page, choisir couluer et police, mettre des petites animations et transition, gérer les ::hover... etc...
-* corriger le titre bannière qui n'est pas centré
 
 ## après
 * vérifier logique de classe css avec smacss et bem : à faire en fin de projet pour vérifier la cohérence de mon système
 * organiser et corriger les barre icon et les verticals nav dot point, ils doivent être dans des nav et pas des section!!! attention à l'impacte du css et du script js!
 * se renseigner sur les mock up, mettre un e image dans un pc ou téléphone pour présenter les applications
+* soigné la mise en page, choisir couluer et police, mettre des petites animations et transition, gérer les ::hover... etc...
 
 ## optionnel
 * navigation dans la page à partir des points de navigation: cliquer sur un point amène au bon endroits de la page
 
 
 ## en cours (branche porject-galery-in-row)
-* commenter et mettre à jour le readme avec ce qui à été fait et faire une section qui détailles ce que j'ai appris.
-
+* corriger le titre bannière qui n'est pas centré
+* pieds de page
 
 
 
@@ -55,4 +50,4 @@
     * item de la gallery;
     * mise en page basique dans les items de la gallery;
 * créer une grille de projet comme sam mahalawi. un projet par ligne dans des petites grilles.
-
+* commenter et mettre à jour le readme avec ce qui à été fait et faire une section qui détailles ce que j'ai appris.
