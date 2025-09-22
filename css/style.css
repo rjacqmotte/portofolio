@@ -11,6 +11,17 @@
   --color-secondary: lightgrey;
   --color-text: black;
   --color-bg: #fff;
+  --color-grey15: hsl(0deg 0% 15%);
+  --color-grey25: hsl(0deg 0% 25%);
+  --color-grey33: hsl(0deg 0% 33%);
+  --color-grey50: hsl(0deg 0% 50%);
+  --color-grey66: hsl(0deg 0% 66%);
+  --color-grey75: hsl(0deg 0% 75%);
+  --color-grey85: hsl(0deg 0% 85%);
+
+
+
+
 
   /* Typo */
   --font-base: sans-serif;
@@ -47,7 +58,6 @@ body {
 }
 
 section {}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -180,9 +190,11 @@ button {
 /* FOOTER --------------- */
 .l-footer {
   grid-area: footer;
+  z-index: 0;
   background-color: var(--color-text);
-  color: var(--color-primary);
 }
+
+
 
 
 
@@ -334,16 +346,19 @@ button {
   position: sticky;
   top: 50vh;
   transform: translateY(-50%);
+  padding: 1rem 0;
 
 }
 
-.social-media-bar ul {
+.social-media__list {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 1rem;
   list-style: none;
-  margin: 1rem 0;
+}
+
+.social-media--vertical {
+  flex-direction: column;
 }
 
 i.fa-brands {
@@ -456,6 +471,52 @@ i.fa-brands {
   margin: 0;
 }
 
+/* Footer
+   ------  */
+
+.footer {
+  grid-area: 6 / 2 / 6 / 4;
+  z-index: 10;
+  background-color: var(--color-text);
+  color: var(--color-primary);
+}
+
+.footer__upper {
+  display: flex;
+  padding: 2rem 0;
+  border-bottom: 1px var(--color-grey25) solid;
+}
+
+.footer__slogan {
+  flex: 1;
+}
+
+.footer__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.footer__slogan__descritpion {
+  font-size: 1rem;
+  color: var(--color-grey75);
+}
+
+.footer__social-media {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.footer__lower{
+  padding: 2rem 0;
+}
+
+.footer__copyrigth > p {
+  font-size: 0.75rem;
+  color: var(--color-grey75);
+  text-align: center;
+}
 
 /* ============================================================
   4. STATES (états visuels)

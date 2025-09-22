@@ -5,6 +5,7 @@
 * changer section.l-vertical-nav- par nav. ... ?
 * rendre fixe vertical nav icon
 * section contact
+* vertical dot point, mettre en sticky car il se mélange au footer en fin de page.
 
 
 ## après
@@ -12,14 +13,15 @@
 * organiser et corriger les barre icon et les verticals nav dot point, ils doivent être dans des nav et pas des section!!! attention à l'impacte du css et du script js!
 * se renseigner sur les mock up, mettre un e image dans un pc ou téléphone pour présenter les applications
 * soigné la mise en page, choisir couluer et police, mettre des petites animations et transition, gérer les ::hover... etc...
+* lire refoctoring ui et màj le site
 
 ## optionnel
 * navigation dans la page à partir des points de navigation: cliquer sur un point amène au bon endroits de la page
 
 
 ## en cours (branche porject-galery-in-row)
-* corriger le titre bannière qui n'est pas centré
-* pieds de page
+
+
 
 
 
@@ -51,3 +53,5 @@
     * mise en page basique dans les items de la gallery;
 * créer une grille de projet comme sam mahalawi. un projet par ligne dans des petites grilles.
 * commenter et mettre à jour le readme avec ce qui à été fait et faire une section qui détailles ce que j'ai appris.
+* corriger le titre bannière qui n'est pas centré
+* pieds de page

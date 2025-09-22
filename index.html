@@ -52,8 +52,8 @@
 
     <section class="l-social-media-banner">
       <div class="vertical-banner">
-        <nav class="social-media-bar">
-          <ul>
+        <nav class="social-media">
+          <ul class="social-media__list social-media--vertical">
             <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             <li><a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
@@ -209,13 +209,38 @@
 
     </section>
 
-    <footer class="l-footer">
-      <div class="footer__slogan">
-        <h2>Renaud Jacqmotte</h2>
-        <p>Un étudiant Full stack qui désire apprendre à faire des sites et des applications sobres, appaisantes, agréable à utliser et respectueuse des individus.</p>
+    <div class="l-footer"></div>
+
+    <footer class="footer">
+      
+      <div class="footer__upper">
+        
+        <div class="footer__slogan">
+          <h2 class="footer__title">Renaud Jacqmotte</h2>
+          <p class="footer__slogan__descritpion">Étudiant full stack, je désire faire des sites et des applications
+            sobres, appaisantes, agréables à utliser et respectueuses des individus.</p>
+        </div>
+
+        <nav class="social-media footer__social-media">
+          <div>
+          <h2 class="footer__title">Social</h2>
+          <ul class="social-media__list">
+            <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          </ul>
+          </div>
+        </nav>
+      
       </div>
-      <nav class="footer__social-media"></nav>
-      <div id="footer__copyrigth"></div>
+      
+      <div class="footer__lower">
+        <div class="footer__copyrigth">
+          <p>Copyright 2025. Made by Renaud Jacqmotte</p>
+        </div>
+      
+      </div>
     </footer>
 
   </div>
