@@ -3,7 +3,7 @@
 ## A faire
 * corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
 * changer section.l-vertical-nav- par nav. ... ?
-* rendre fixe vertical nav icon
+
 
 
 
@@ -20,7 +20,6 @@
 
 ## en cours (branche porject-galery-in-row)
 * section contact
-* vertical dot point, mettre en sticky car il se mélange au footer en fin de page.
 
 
 
@@ -55,3 +54,5 @@
 * commenter et mettre à jour le readme avec ce qui à été fait et faire une section qui détailles ce que j'ai appris.
 * corriger le titre bannière qui n'est pas centré
 * pieds de page
+* rendre fixe vertical nav icon
+* vertical dot point, mettre en sticky car il se mélange au footer en fin de page.
