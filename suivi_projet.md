@@ -4,8 +4,7 @@
 * corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
 * changer section.l-vertical-nav- par nav. ... ?
 * rendre fixe vertical nav icon
-* section contact
-* vertical dot point, mettre en sticky car il se mélange au footer en fin de page.
+
 
 
 ## après
@@ -20,7 +19,8 @@
 
 
 ## en cours (branche porject-galery-in-row)
-
+* section contact
+* vertical dot point, mettre en sticky car il se mélange au footer en fin de page.
 
 
 

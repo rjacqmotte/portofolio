@@ -343,7 +343,7 @@ button {
   border: solid 2px var(--color-secondary);
   border-radius: 0px var(--radius) var(--radius) 0px;
   width: 50px;
-  position: sticky;
+  position: relative;
   top: 50vh;
   transform: translateY(-50%);
   padding: 1rem 0;
@@ -374,10 +374,10 @@ i.fa-brands {
   border: solid 1px var(--color-primary);
   width: 30px;
   height: 50vh;
-  position: fixed;
-  top: 50hv;
-  transform: translateY(50%);
+  transform: translateY(-50%);
   border-radius: var(--radius) 0 0 var(--radius);
+  position: sticky;
+  top: 50vh;
 }
 
 .vertical-nav {
