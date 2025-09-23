@@ -208,25 +208,31 @@
       </header>
 
 
-      <form action="#" method="#">
-        <h3 class="message-form__title">Laisse moi un message!</h3>
-        <p class="message-form__info">Ce formulaire ne fonctionne pas pour l'instant... Il est là uniquement pour m'entrainer à coder. Envoye moi un mail, je te répondrai avec plaisir : rjacqmotte@gmail.com</p>
-
-        <label for="email">Ton e-mail : </label>
-        <input id="email" type="text" name="visitor-email" value="mon_email@bolo.com">
-        <hr>
-        <label for="message">Écris ton message : </label>
-        <br>
-        <textarea id="message" name="visitor-message" rows="10" cols="30">Mon message ici : ) </textarea>
-        <hr>
-        <label for="ca_va">... Et sinon, ca va la famille ??? ...  </label>
-        <br>
-        <span>Dur-dur : / </span>
-        <input id="ca_va" name="comment_ca_va" type="range" min="0" max="100" step="1">
-        <span>La vita è bella! : ) </span>
-        <hr>
-        <input type="submit" value="Envoyer">
-
+      <form class="contact-form" action="#" method="#">
+        <header class="contact-form__title">
+          <h3>Laisse moi un message!</h3>
+          <p>Ce formulaire ne fonctionne pas pour l'instant... Il est là uniquement pour m'entrainer à coder. Envoye moi
+            un mail, je te répondrai avec plaisir : rjacqmotte@gmail.com</p>
+        </header>
+        <div class="contact-form__email">
+          <label for="email">Ton e-mail</label>
+          <input id="email" type="text" name="visitor-email" placeholder="mon_email@bolo.com">
+        </div>
+        <div class="contact-form__message">
+          <label for="message">Ton message</label>
+          <br>
+          <textarea id="message" name="visitor-message" rows="10" cols="30"
+            placeholder="Mon message ici : )"></textarea>
+        </div>
+        <div class="contact-form__how_are_you">
+          <label for="ca_va">Et sinon, ca va la famille ??? ... </label>
+          <div>
+            <span>Dur-dur : / </span>
+            <input id="ca_va" name="comment_ca_va" type="range" min="0" max="100" step="1">
+            <span> La vita è bella! : ) </span>
+          </div>
+        </div>
+        <input class="contact_form__submit" type="submit" value="Envoyer">
       </form>
 
 
