@@ -160,28 +160,10 @@ button {
   grid-area: banner;
 }
 
+
+/* about-me */
 .l-about-me {
   grid-area: about;
-}
-
-.l-about-me__content {
-  display: flex;
-}
-
-.l-about-me__container {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.l-knowing-me {
-  grid-area: know-me;
-  flex: 1;
-}
-
-.l-my-skills {
-  grid-area: skills;
-  flex: 1;
 }
 
 .l-projects {
@@ -409,8 +391,30 @@ i.fa-brands {
   height: 10px;
 }
 
+/* two-cols 
+   -------- */
+.two-cols {
+  display: flex;
+}
+
+.two-cols__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.two-cols__col1 {
+  flex: 1;
+}
+
+.two-cols__col2 {
+  flex: 1;
+}
+
+
+
 /* 3.32 Skills-list
-  ------------ */
+  ----------------- */
 .skills-list {
   display: flex;
   list-style: none;
