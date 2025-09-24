@@ -209,27 +209,38 @@
 
       <div class="two-cols">
 
-        <section class="knowing-me two-cols__col1">
+        <section class="leave-message two-cols__col1">
           <div class="two-cols__container">
-            <h3>Get to know me!</h3>
-            <p>Je suis un papa geek, qui désire apprendre un nouveau métier. Je rêve d'une monde ou nous pouvons vivre
-              en
-              harmonie et prendre soin du vivant. Je désire faciliter la collaboration, la transparence et la partage
-              d'info
-              grâce aux outils infromatiques.</p>
-            <button class="u-align-self-center">Contact</button>
+            <h3>Laisse moi un message!</h3>
+            <p>Ce formulaire ne fonctionne pas pour l'instant... Il est là uniquement pour m'entrainer à coder. Envoie
+              moi un mail, je te répondrai avec plaisir.</p>
+            <button class="u-align-self-center">rjacqmotte@gmail.com</button>
           </div>
         </section>
 
-        <section class="my-skills two-cols__col2">
+        <section class="contact-form two-cols__col2">
           <div class="two-cols__container">
-            <h3>My skills</h3>
-            <ul class="skills-list">
-              <li class="skill-list__item">HTML & CSS</li>
-              <li class="skill-list__item">github</li>
-              <li class="skill-list__item">Java Script</li>
-              <li class="skill-list__item">Compétence</li>
-            </ul>
+            <form class="contact-form" action="#" method="#">
+              <div class="contact-form__email">
+                <label for="email">Ton e-mail</label>
+                <input id="email" type="text" name="visitor-email" placeholder="mon_email@bolo.com">
+              </div>
+              <div class="contact-form__message">
+                <label for="message">Ton message</label>
+                <br>
+                <textarea id="message" name="visitor-message" rows="10" cols="30"
+                  placeholder="Mon message ici : )"></textarea>
+              </div>
+              <div class="contact-form__how_are_you">
+                <label for="ca_va">Et sinon, ca va la famille ??? ... </label>
+                <div>
+                  <span>Dur-dur : / </span>
+                  <input id="ca_va" name="comment_ca_va" type="range" min="0" max="100" step="1">
+                  <span> La vita è bella! : ) </span>
+                </div>
+              </div>
+              <input class="contact_form__submit" type="submit" value="Envoyer">
+            </form>
           </div>
         </section>
 
@@ -238,35 +249,10 @@
 
 
 
-      
 
 
-      <form class="contact-form" action="#" method="#">
-        <header class="contact-form__title">
-          <h3>Laisse moi un message!</h3>
-          <p>Ce formulaire ne fonctionne pas pour l'instant... Il est là uniquement pour m'entrainer à coder. Envoye moi
-            un mail, je te répondrai avec plaisir : rjacqmotte@gmail.com</p>
-        </header>
-        <div class="contact-form__email">
-          <label for="email">Ton e-mail</label>
-          <input id="email" type="text" name="visitor-email" placeholder="mon_email@bolo.com">
-        </div>
-        <div class="contact-form__message">
-          <label for="message">Ton message</label>
-          <br>
-          <textarea id="message" name="visitor-message" rows="10" cols="30"
-            placeholder="Mon message ici : )"></textarea>
-        </div>
-        <div class="contact-form__how_are_you">
-          <label for="ca_va">Et sinon, ca va la famille ??? ... </label>
-          <div>
-            <span>Dur-dur : / </span>
-            <input id="ca_va" name="comment_ca_va" type="range" min="0" max="100" step="1">
-            <span> La vita è bella! : ) </span>
-          </div>
-        </div>
-        <input class="contact_form__submit" type="submit" value="Envoyer">
-      </form>
+
+
 
 
     </section>
