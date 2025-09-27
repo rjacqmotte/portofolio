@@ -2,8 +2,7 @@
 
 ## A faire
 * corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
-* changer section.l-vertical-nav- par nav. ... ?
-Corriger la sémantique HTML - changer <section> en <nav>
+
 
 
 
@@ -66,6 +65,7 @@ Prévoir la navigation mobile
 * vertical dot point, mettre en sticky car il se mélange au footer en fin de page.
 * Nettoyer les CSS dupliqués - fusionner button et .button
 * Supprimer les classes inutiles - .gallery__grid-container
+* changer section.l-vertical-nav- par nav. ... ? : Corriger la sémantique HTML - changer <section> en <nav>
 
 ---
 ## Rem
