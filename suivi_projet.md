@@ -3,6 +3,14 @@
 ## A faire
 * corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
 * changer section.l-vertical-nav- par nav. ... ?
+Corriger la sémantique HTML - changer <section> en <nav>
+
+
+
+Avant le responsive :
+Définir une stratégie de breakpoints
+Ajuster les tailles de police (4rem → 2.5rem max)
+Prévoir la navigation mobile
 
 
 
@@ -56,3 +64,15 @@
 * pieds de page
 * rendre fixe vertical nav icon
 * vertical dot point, mettre en sticky car il se mélange au footer en fin de page.
+* Nettoyer les CSS dupliqués - fusionner button et .button
+* Supprimer les classes inutiles - .gallery__grid-container
+
+---
+## Rem
+
+### stratégie de breakpoint
+/* Mobile first approach recommandée */
+@media (min-width: 576px) { /* Small devices */ }
+@media (min-width: 768px) { /* Tablets */ }
+@media (min-width: 992px) { /* Desktop */ }
+@media (min-width: 1200px) { /* Large desktop */ }
