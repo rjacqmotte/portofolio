@@ -1,7 +1,7 @@
 # Suivi de projet
 
 ## A faire
-* corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
+
 
 
 
@@ -16,7 +16,7 @@ Prévoir la navigation mobile
 
 ## après
 * vérifier logique de classe css avec smacss et bem : à faire en fin de projet pour vérifier la cohérence de mon système
-* organiser et corriger les barre icon et les verticals nav dot point, ils doivent être dans des nav et pas des section!!! attention à l'impacte du css et du script js!
+
 * se renseigner sur les mock up, mettre un e image dans un pc ou téléphone pour présenter les applications
 * soigné la mise en page, choisir couluer et police, mettre des petites animations et transition, gérer les ::hover... etc...
 * lire refoctoring ui et màj le site
@@ -26,7 +26,7 @@ Prévoir la navigation mobile
 
 
 ## en cours (branche porject-galery-in-row)
-* section contact
+
 
 
 
@@ -66,13 +66,16 @@ Prévoir la navigation mobile
 * Nettoyer les CSS dupliqués - fusionner button et .button
 * Supprimer les classes inutiles - .gallery__grid-container
 * changer section.l-vertical-nav- par nav. ... ? : Corriger la sémantique HTML - changer <section> en <nav>
+* corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
+* organiser et corriger les barre icon et les verticals nav dot point, ils doivent être dans des nav et pas des section!!! attention à l'impacte du css et du script js!
+* section contact
 
 ---
 ## Rem
 
 ### stratégie de breakpoint
 /* Mobile first approach recommandée */
-@media (min-width: 576px) { /* Small devices */ }
-@media (min-width: 768px) { /* Tablets */ }
-@media (min-width: 992px) { /* Desktop */ }
-@media (min-width: 1200px) { /* Large desktop */ }
+• 320px : Base (mobile très petit)
+• 768px : Tablettes 
+• 1024px : Desktop
+• 1440px : Grands écrans (optionnel)
