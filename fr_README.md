@@ -66,12 +66,57 @@ Tout bête et très satisfaisant, j'ai découvert comment utiliser et intégrer 
 Voir dans la section "social media banner".
 
 ### Responsive
+#### questionnements
 Dans un premier temps, je fais le design pour un écran d'ordinateur. Je suis confus sur les méthodes à utiliser. En effet, j'ai lu en partie "Refactoring UI" et il conseille d'autres choses que celles que j'ai mises en place.
 1. Travail avec rem pour les marges, le padding et la taille des polices.
 2. Utilisation de vw ou de % pour les espaces de type layout... Je verrai si je conserve cela.
 3. Utilisation de grid et flex qui naturellement gèrent le responsive.
 Mais je verrai après si je ferai des modifications. Je reste très curieux de me replonger dans "Refactoring UI" pour mettre en pratique une bonne méthode de travail.
 Retours à donner !!!
+4. je vais utiliser les media queries directement au seins de ma strucuture css esxistante: 1. base, 2. layout, 3. modules
+
+#### décisions pour le responsive
+1. je vais travbailler en mobile first. je vais donc réécrire les pages dans ce sens.
+2. j'ai défini (surtout l'ia m'a donné) des dimension clés pour les éléments tels que h1, h2, h3, p.
+    ```
+        /* BASE (mobile) */
+    h1 { font-size: 1.75rem; line-height: 1.2; } /* 28px */
+    h2 { font-size: 1.5rem; line-height: 1.3; }  /* 24px */
+    h3 { font-size: 1.25rem; line-height: 1.4; } /* 20px */
+    p, label { font-size: 1rem; line-height: 1.5; } /* 16px */
+
+    /* Small devices (≥321px) */
+    @media (min-width: 321px) {
+    h1 { font-size: 2rem; }      /* 32px */
+    h2 { font-size: 1.75rem; }   /* 28px */
+    h3 { font-size: 1.375rem; }  /* 22px */
+    }
+
+    /* Tablets (≥768px) */
+    @media (min-width: 768px) {
+    h1 { font-size: 2.5rem; }    /* 40px */
+    h2 { font-size: 2rem; }      /* 32px */
+    h3 { font-size: 1.5rem; }    /* 24px */
+    p { font-size: 1.125rem; }   /* 18px */
+    }
+
+    /* Desktop (≥1024px) */
+    @media (min-width: 1024px) {
+    h1 { font-size: 3rem; }      /* 48px */
+    h2 { font-size: 2.25rem; }   /* 36px */
+    h3 { font-size: 1.75rem; }   /* 28px */
+    }
+
+    /* Large desktop (≥1440px) */
+    @media (min-width: 1440px) {
+    h1 { font-size: 3.5rem; }    /* 56px - votre 4rem actuel réduit */
+    h2 { font-size: 2.5rem; }    /* 40px */
+    h3 { font-size: 1.875rem; }  /* 30px */
+    }
+    ```
+3. je vais travailler avec 4 ou 5 breaking point. je choisi ceux proposer par google chrome (320px, 425px ??? , 768px, 1024px, 1440px). si mon site présente des breaking point "naturelle" entre ces points là, j'en prendrai soins égelement, dans un deuxième temps.
+
+
 
 #### Retours sur le responsive
 => Plus tard, penser à donner un retour sur la méthode utilisée après la lecture de "Refactoring UI".
