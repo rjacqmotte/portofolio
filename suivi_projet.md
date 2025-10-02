@@ -26,7 +26,8 @@ Prévoir la navigation mobile
 
 
 ## en cours (branche porject-galery-in-row)
-
+* mobile first
+    * section about me
 
 
 

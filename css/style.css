@@ -213,7 +213,7 @@ i {
     "footer";
   position: relative;
   column-gap: 1rem;
-  row-gap: 1rem;
+  row-gap: 8rem;
 }
 
 .l-footer-background,
@@ -623,7 +623,7 @@ i.fa-up-right-from-square {
 .skills-list {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content:left;
   flex-wrap: wrap;
 }
 
