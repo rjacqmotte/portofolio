@@ -623,7 +623,7 @@ i.fa-up-right-from-square {
 .skills-list {
   display: flex;
   list-style: none;
-  justify-content:left;
+  justify-content: left;
   flex-wrap: wrap;
 }
 
@@ -644,14 +644,22 @@ i.fa-up-right-from-square {
 }
 
 .gallery__item {
-  height: 350px;
+  height: 500px;
   border: solid 1px var(--color-secondary);
   border-radius: var(--radius);
   padding: 0 1rem;
 
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
+}
 
+@media (min-width: 1024px) {
+  .gallery__item {
+    height: 350px;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .gallery__img-container img {}
 }
 
 .gallery__img-container {
@@ -679,6 +687,7 @@ i.fa-up-right-from-square {
 .gallery__info button {
   width: min-content;
   margin: 0;
+  align-self: center;
 }
 
 /* contact form */
