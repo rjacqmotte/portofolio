@@ -26,8 +26,7 @@ Prévoir la navigation mobile
 
 
 ## en cours (branche porject-galery-in-row)
-* mobile first
-    * section about me
+
 
 
 
@@ -70,6 +69,8 @@ Prévoir la navigation mobile
 * corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
 * organiser et corriger les barre icon et les verticals nav dot point, ils doivent être dans des nav et pas des section!!! attention à l'impacte du css et du script js!
 * section contact
+* mobile first
+    * section about me
 
 ---
 ## Rem
