@@ -1,15 +1,22 @@
 # Suivi de projet
 
 ## A faire
-* corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
-* changer section.l-vertical-nav- par nav. ... ?
+
+
+
+
+
+Avant le responsive :
+Définir une stratégie de breakpoints
+Ajuster les tailles de police (4rem → 2.5rem max)
+Prévoir la navigation mobile
 
 
 
 
 ## après
 * vérifier logique de classe css avec smacss et bem : à faire en fin de projet pour vérifier la cohérence de mon système
-* organiser et corriger les barre icon et les verticals nav dot point, ils doivent être dans des nav et pas des section!!! attention à l'impacte du css et du script js!
+
 * se renseigner sur les mock up, mettre un e image dans un pc ou téléphone pour présenter les applications
 * soigné la mise en page, choisir couluer et police, mettre des petites animations et transition, gérer les ::hover... etc...
 * lire refoctoring ui et màj le site
@@ -19,7 +26,7 @@
 
 
 ## en cours (branche porject-galery-in-row)
-* section contact
+
 
 
 
@@ -56,3 +63,21 @@
 * pieds de page
 * rendre fixe vertical nav icon
 * vertical dot point, mettre en sticky car il se mélange au footer en fin de page.
+* Nettoyer les CSS dupliqués - fusionner button et .button
+* Supprimer les classes inutiles - .gallery__grid-container
+* changer section.l-vertical-nav- par nav. ... ? : Corriger la sémantique HTML - changer <section> en <nav>
+* corriger le module des barre de réseaux sociaux, lui faire des noms de classes cohérents, nettoyer ce qui n'est pas nécessaire, faire un git;
+* organiser et corriger les barre icon et les verticals nav dot point, ils doivent être dans des nav et pas des section!!! attention à l'impacte du css et du script js!
+* section contact
+* mobile first
+    * section about me
+
+---
+## Rem
+
+### stratégie de breakpoint
+/* Mobile first approach recommandée */
+• 320px : Base (mobile très petit)
+• 768px : Tablettes 
+• 1024px : Desktop
+• 1440px : Grands écrans (optionnel)
