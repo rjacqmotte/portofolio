@@ -18,6 +18,7 @@
   --color-grey66: hsl(0deg 0% 66%);
   --color-grey75: hsl(0deg 0% 75%);
   --color-grey85: hsl(0deg 0% 85%);
+  --color-grey95: hsl(0deg 0% 95%);
 
 
 
@@ -481,8 +482,7 @@ button,
 .button {
   font-family: var(--font-base);
   font-size: 0.875rem;
-  /* 14px */
-  font-weight: 400;
+  font-weight: 500;
   padding: 0.75rem 1rem;
   /* 12px 16px */
   border-radius: 0.5rem;
@@ -490,11 +490,36 @@ button,
   min-height: 44px;
   /* Accessibilité tactile */
   margin: 2rem 0;
-  border: solid 1px black;
-  text-transform: uppercase;
-  background-color: var(--color-secondary);
+  border: solid 1px var(--color-grey33);
+  text-transform: none;
+  background-color: var(--color-grey95);
+  color: var(--color-text);
   width: min-content;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
+
+button:hover,
+.button:hover {
+  background-color: var(--color-grey85);
+  border-color: var(--color-grey50);
+  transform: translateY(-1px);
+}
+
+.button--modern {
+  background-color: transparent;
+  border: 1px solid var(--color-grey66);
+  color: var(--color-grey33);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.button--modern:hover {
+  background-color: var(--color-text);
+  color: var(--color-primary);
+  border-color: var(--color-text);
+}
+
 
 /* Small devices (≥321px) */
 @media (min-width: 321px) {
@@ -529,21 +554,25 @@ button,
 }
 
 .button--outlined {
-  background-color: var(--color-primary);
+  background-color: transparent;
+  border: 1px solid var(--color-grey33);
+}
+
+.button--outlined:hover {
+  background-color: var(--color-grey85);
 }
 
 .button--text {
-  background-color: var(--color-primary);
+  background-color: transparent;
   border: none;
-  font-weight: 600;
-  padding: 0;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  color: var(--color-grey33);
 }
 
 .button--no-margin {
   margin: 0;
 }
-
-
 
 /* icons */
 i.fa-up-right-from-square {
@@ -637,7 +666,7 @@ i.fa-up-right-from-square {
   padding: 1rem;
   margin: 0.5rem;
   border-radius: var(--radius);
-  background-color: var(--color-secondary);
+  background-color: var(--color-grey95);
 }
 
 /* Gallery */
