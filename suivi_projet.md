@@ -1,7 +1,11 @@
 # Suivi de projet
 
 ## A faire
-
+* section hey all screen
+* secrtion about me, all screens
+* section project, all screens
+* section contact, all screens
+* footer, all screen
 
 
 
@@ -26,7 +30,7 @@ Prévoir la navigation mobile
 
 
 ## en cours (branche porject-galery-in-row)
-
+* header all screen
 
 
 

@@ -89,6 +89,7 @@ textarea {
   border: 1px solid var(--color-secondary);
   border-radius: var(--radius);
   font-family: inherit;
+  color: var(--color-secondary);
 }
 
 /* Small devices (≥321px) */
@@ -275,10 +276,6 @@ i {
 /* MAIN HEADER --------- */
 .l-header {
   grid-area: header;
-  display: flex;
-  margin: 1rem;
-  border: 2px solid bleu;
-  overflow: hidden;
 }
 
 
@@ -320,26 +317,6 @@ i {
   Nom des classes en BEM : `.bloc`, `.bloc__élément`, `.bloc--modificateur`
 ============================================================ */
 
-
-/* -----------------------------
-  3.00 Body
-  ------------------------------ */
-/*
-  .social-media-bar {
-  position: sticky;
-  top: 30vh; // ajuste pour le centrage vertical dans la section
-  align-self: flex-start;
-  left: 0;
-  z-index: 10;
-  background: transparent;
-  padding: 0.5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  height: fit-content;
-  }
-*/
-
 /* Section-title */
 .section-title {
   display: flex;
@@ -364,12 +341,15 @@ i {
 }
 
 
+/* 3.10 Header --------------------*/
+/* ------------------------------- */
+.header {
+  display: flex;
+  margin: 1rem;
+  overflow: hidden;
+}
 
-/* -----------------------------
-  3.10 Header 
-  ------------------------------ */
-
-/* logo-and-title */
+/* 3.11 logo-and-title */
 .logo-and-title {
   width: 70%;
   display: flex;
@@ -390,18 +370,16 @@ i {
   display: block;
 }
 
-
-/* main-nav */
-.main-nav {
-  display: none;
+.text-header {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
-@media (min-width: 1024px) {
-  .main-nav {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-  }
+
+/* 3.12 main-nav */
+.main-nav {
+  display: none;
 }
 
 .main-nav__list {
@@ -410,11 +388,14 @@ i {
   list-style: none;
 }
 
-.text-header {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 300;
+@media (min-width: 768px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
 }
+
 
 /* -----------------------------
   3.20 Banner Hey 
