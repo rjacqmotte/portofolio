@@ -1,11 +1,12 @@
 # Suivi de projet
 
 ## A faire
-* section hey all screen
+
 * secrtion about me, all screens
 * section project, all screens
 * section contact, all screens
 * footer, all screen
+* layout, espace, diemnsion des titres, ... , all screen
 
 
 
@@ -24,13 +25,15 @@ Prévoir la navigation mobile
 * se renseigner sur les mock up, mettre un e image dans un pc ou téléphone pour présenter les applications
 * soigné la mise en page, choisir couluer et police, mettre des petites animations et transition, gérer les ::hover... etc...
 * lire refoctoring ui et màj le site
+* menu mobile hambergur
+
 
 ## optionnel
 * navigation dans la page à partir des points de navigation: cliquer sur un point amène au bon endroits de la page
 
 
 ## en cours (branche porject-galery-in-row)
-* header all screen
+
 
 
 
@@ -75,6 +78,8 @@ Prévoir la navigation mobile
 * section contact
 * mobile first
     * section about me
+* header all screen
+* section hey all screen
 
 ---
 ## Rem

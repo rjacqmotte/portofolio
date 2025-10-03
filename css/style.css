@@ -242,7 +242,7 @@ i {
       ".        projects  projects  v-nav"
       ".        contact   contact   v-nav"
       "footer   footer    footer    footer";
-    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
     position: relative;
     column-gap: 1.618vw;
     row-gap: 5rem;
@@ -261,7 +261,6 @@ i {
     grid-area: social-m;
     display: flex;
     align-items: start;
-    min-height: 100vh;
   }
 
   .l-vertical-nav {
@@ -437,10 +436,8 @@ i {
   border-radius: 0px var(--radius) var(--radius) 0px;
   width: 50px;
   position: relative;
-  top: 50vh;
-  transform: translateY(-50%);
   padding: 1rem 0;
-
+  align-self: center;
 }
 
 .social-media__list {
