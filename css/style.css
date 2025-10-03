@@ -618,12 +618,10 @@ i.fa-up-right-from-square {
     flex-direction: row;
   }
 
-  .two-cols__col1 {
-    flex: 1;
-  }
-
+  .two-cols__col1,
   .two-cols__col2 {
     flex: 1;
+    max-width: 450px;
   }
 }
 
