@@ -6,11 +6,8 @@
 ============================================================ */
 
 :root {
-  /* Couleurs */
-  --color-primary: white;
-  --color-secondary: lightgrey;
-  --color-text: #333;
-  --color-bg: #fff;
+  /* COLOR ----------- */
+  
   --color-grey15: hsl(0deg 0% 15%);
   --color-grey25: hsl(0deg 0% 25%);
   --color-grey33: hsl(0deg 0% 33%);
@@ -20,7 +17,39 @@
   --color-grey85: hsl(0deg 0% 85%);
   --color-grey95: hsl(0deg 0% 95%);
 
-  /* Typo */
+  /* base */
+  --color-primary: white;
+  --color-secondary: var(--color-grey85);
+  --color-text: var(--color-grey25);
+  --color-text-secondary: var(--color-grey75);
+  --color-bg: #fff;
+  --color-bg-secondary: black;
+  
+  /* button */
+  --color-border-button: var(--color-grey33);
+  --color-border-button-hover: var(--color-grey50);
+  --color-background-button: var(--color-grey95);
+  --color-background-button-hover: var(var(--color-grey85));
+
+  /* button modern */
+  --color-button--modern: var(--color-grey33);
+  --color-button--modern-hover: var(--color-primary);
+  --color-background-button--modern: transparent;
+  --color-background-button--modern-hover: var(--color-text);
+  --color-border-button-modern: var(--color-grey66);
+  --color-border-button-modern-hover: var(--color-text);
+
+  /* button outlined */
+  --color-background-button--outlined: transparent;
+  --color-background-button--outlined-hover: var(--color-grey85);
+  --color-border-button--outlined: var(--color-grey33);
+
+  /* button text */
+  --color-button--text: var(--color-grey33);
+  --color-background-button--text: transparent;
+
+  /* TYPO ----------- */
+  /* base */
   --font-base: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial,
     sans-serif;
   --font-size-base: 1rem;
@@ -276,9 +305,9 @@ button,
   border-radius: 0.5rem;
   min-height: 44px;
   margin: 2rem 0;
-  border: solid 1px var(--color-grey33);
+  border: solid 1px var(--color-border-button);
   text-transform: none;
-  background-color: var(--color-grey95);
+  background-color: var(--color-background-button);
   color: var(--color-text);
   width: min-content;
   cursor: pointer;
@@ -293,34 +322,34 @@ button:hover,
 }
 
 .button--modern {
-  background-color: transparent;
-  border: 1px solid var(--color-grey66);
-  color: var(--color-grey33);
+  background-color: var(--color-background-button--modern);
+  border: 1px solid var(--color-border-button-modern);
+  color: var(--color-button--modern);
   font-weight: 400;
   letter-spacing: 0.02em;
 }
 
 .button--modern:hover {
-  background-color: var(--color-text);
-  color: var(--color-primary);
-  border-color: var(--color-text);
+  background-color: var(--color-background-button--modern-hover);
+  color: var(--color-border-button-hover);
+  border-color: var(--color-border-button-modern-hover);
 }
 
 .button--outlined {
-  background-color: transparent;
-  border: 1px solid var(--color-grey33);
+  background-color: var(--color-background-button--outlined);
+  border: 1px solid var(--color-border-button--outlined);
 }
 
 .button--outlined:hover {
-  background-color: var(--color-grey85);
+  background-color: var(--color-background-button--outlined-hover);
 }
 
 .button--text {
-  background-color: transparent;
+  background-color: var(--color-background-button--text);
   border: none;
   font-weight: 500;
   padding: 0.5rem 1rem;
-  color: var(--color-grey33);
+  color: var(--color-button--text);
 }
 
 .button--no-margin {
@@ -554,7 +583,7 @@ button:hover,
   padding: 1rem;
   margin: 0.5rem;
   border-radius: var(--radius);
-  background-color: var(--color-grey95);
+  background-color: var(--color-secondary);
 }
 
 /* 3.40 Gallery ------------------ */
@@ -675,7 +704,7 @@ button:hover,
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 0;
-  border-bottom: 1px var(--color-grey25) solid;
+  border-bottom: 1px var(--color-text) solid;
 }
 
 .footer__slogan {
@@ -690,7 +719,7 @@ button:hover,
 
 .footer__slogan__descritpion {
   font-size: 1rem;
-  color: var(--color-grey75);
+  color: var(--color-text-secondary);
 }
 
 .footer__social-media {
@@ -709,7 +738,7 @@ button:hover,
 
 .footer__copyrigth > p {
   font-size: 0.75rem;
-  color: var(--color-grey75);
+  color: var(--color-text-secondary);
   text-align: center;
 }
 
