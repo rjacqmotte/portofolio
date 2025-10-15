@@ -2,13 +2,10 @@
 
 ## A faire
 
-* secrtion about me, all screens
-* section project, all screens
-* section contact, all screens
-* footer, all screen
-* layout, espace, diemnsion des titres, ... , all screen
-
-
+* menu de navigaton, le rendre vivant;
+* lier les bouton interne de navigation: contact et projet;
+* remplir un ou 2 projets
+* mettre à jour le markdown
 
 
 Avant le responsive :
@@ -80,6 +77,11 @@ Prévoir la navigation mobile
     * section about me
 * header all screen
 * section hey all screen
+* secrtion about me, all screens
+* section project, all screens
+* section contact, all screens
+* footer, all screen
+* layout, espace, diemnsion des titres, ... , all screen  
 
 ---
 ## Rem
