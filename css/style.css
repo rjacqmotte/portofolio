@@ -1,8 +1,8 @@
 /* ============================================================
   0. VARIABLES
   ------------------------------------------------------------
-  Couleurs, tailles, espacements, polices, etc.
-  Utilise :root pour les rendre accessibles partout.
+  Colors, sizes, spacing, fonts, etc.
+  Using :root to make them accessible everywhere.
 ============================================================ */
 
 :root {
@@ -104,8 +104,8 @@
 /* ============================================================
   1. BASE
   ------------------------------------------------------------
-  Ce sont les styles de "reset", polices, couleurs globales, 
-  liens, etc. (pas de BEM ici)
+  These are "reset" styles, fonts, global colors,
+  links, etc. (no BEM here)
 ============================================================ */
 
 * {
@@ -184,9 +184,9 @@ i.fa-up-right-from-square {
 /* ============================================================
   2. LAYOUT
   ------------------------------------------------------------
-  Structure de page : header, footer, main, sidebar...
-  Convention : préfixe `.l-` (l = layout)
-  Pas de BEM ici — ce sont des conteneurs structurels
+  Page structure: header, footer, main, sidebar...
+  Convention: prefix `.l-` (l = layout)
+  No BEM here — these are structural containers
 ============================================================ */
 
 .l-main-container {
@@ -289,10 +289,10 @@ i.fa-up-right-from-square {
 }
 
 /* ============================================================
-  3. MODULES (composants réutilisables)
+  3. MODULES (reusable components)
   ------------------------------------------------------------
-  Boutons, cartes, formulaires, menus, etc.
-  Nom des classes en BEM : `.bloc`, `.bloc__élément`, `.bloc--modificateur`
+  Buttons, cards, forms, menus, etc.
+  BEM class naming: `.block`, `.block__element`, `.block--modifier`
 ============================================================ */
 
 /* 3.00 buttons ------------------ */
@@ -673,13 +673,13 @@ button:hover,
 .contact-form__message textarea {
   width: 100%;
   height: 150px;
-  /* ou la hauteur souhaitée */
+  /* or desired height */
   min-height: 100px;
-  /* hauteur minimale */
+  /* minimum height */
   max-height: 300px;
-  /* hauteur maximale */
+  /* maximum height */
   resize: none;
-  /* permet le redimensionnement vertical uniquement */
+  /* allows vertical resizing only */
   padding: 0.5rem;
 }
 
@@ -771,10 +771,10 @@ button:hover,
 }
 
 /* ============================================================
-  4. STATES (états visuels)
+  4. STATES (visual states)
   ------------------------------------------------------------
-  Visible/invisible, actif/inactif, etc.
-  Convention : `.is-*` ou `.has-*` (pas BEM)
+  Visible/invisible, active/inactive, etc.
+  Convention: `.is-*` or `.has-*` (not BEM)
 ============================================================ */
 
 .is-hidden {
@@ -790,10 +790,10 @@ button:hover,
 }
 
 /* ============================================================
-  5. UTILITIES (classes utilitaires rapides)
+  5. UTILITIES (quick utility classes)
   ------------------------------------------------------------
-  Marges, paddings, text-align, etc. à usage ponctuel
-  Convention : `.u-*` (pas BEM)
+  Margins, paddings, text-align, etc. for occasional use
+  Convention: `.u-*` (not BEM)
 ============================================================ */
 
 .u-mt-2 {
