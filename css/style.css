@@ -18,18 +18,20 @@
   --color-grey95: hsl(0deg 0% 95%);
 
   /* base */
-  --color-primary: white;
-  --color-secondary: var(--color-grey85);
-  --color-text: var(--color-grey25);
+  --color-primary: hsl(40deg 20% 94%);
+  --color-secondary: var(--color-grey75);
+  --color-text: var(--color-grey15);
   --color-text-secondary: var(--color-grey75);
-  --color-bg: #fff;
-  --color-bg-secondary: black;
+  --color-bg: hsl(40deg 20% 94%);
+  --color-bg-secondary: var(--color-grey15);
+
+  --color-interactive: hsl(275, 28%, 73%);
   
   /* button */
   --color-border-button: var(--color-grey33);
   --color-border-button-hover: var(--color-grey50);
   --color-background-button: var(--color-grey95);
-  --color-background-button-hover: var(var(--color-grey85));
+  --color-background-button-hover: var(--color-interactive);
 
   /* button modern */
   --color-button--modern: var(--color-grey33);
@@ -267,7 +269,7 @@ i.fa-up-right-from-square {
     display: block;
     grid-area: footer;
     z-index: 0;
-    background-color: var(--color-text);
+    background-color: var(--color-bg-secondary);
   }
 
   /* VERTICALS MENUS ----- */
@@ -316,8 +318,8 @@ button,
 
 button:hover,
 .button:hover {
-  background-color: var(--color-grey85);
-  border-color: var(--color-grey50);
+  background-color: var(--color-background-button-hover);
+  border-color: var(--color-border-button-hover);
   transform: translateY(-1px);
 }
 
@@ -459,7 +461,7 @@ button:hover,
   height: 0.3rem;
   width: 5rem;
   border-radius: var(--radius);
-  background-color: var(--color-secondary);
+  background-color: var(--color-interactive);
 }
 
 .section-title__sub-title {
@@ -694,7 +696,7 @@ button:hover,
 .footer-content {
   grid-area: footer;
   z-index: 10;
-  background-color: var(--color-text);
+  background-color: var(--color-bg-secondary);
   color: var(--color-primary);
   padding: 0 1rem;
 }
