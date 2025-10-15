@@ -49,7 +49,7 @@
   @media (min-width: 1024px) {
     --font-size-h1: 3rem;
     --font-size-h2: 2.25rem;
-    --font-size-h3 1.75rem;
+    --font-size-h3: 1.75rem;
   }
 
   /* Large desktop (≥1440px) */
