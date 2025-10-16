@@ -3,7 +3,7 @@
 ## A faire
 
 * menu de navigaton, le rendre vivant;
-* lier les bouton interne de navigation: contact et projet;
+
 * remplir un ou 2 projets
 * mettre à jour le markdown
 
@@ -30,7 +30,7 @@ Prévoir la navigation mobile
 
 
 ## en cours (branche porject-galery-in-row)
-* marge
+* lier les bouton interne de navigation: contact et projet;
 
 
 

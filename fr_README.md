@@ -124,6 +124,15 @@ Retours à donner !!!
 ### Script de navigation dot point
 Là, ça m'a pris beaucoup de temps, mais j'ai beaucoup appris. J'ai pu pratiquer et bien comprendre comment sélectionner et modifier les nodes dans le DOM. Essentiel...
 
+### Variables CSS
+j'ai essayé différente façon d'utiliser les variables css. mettre les media querries dedans ou non? 
+je me rends compte que l'on peut aller fort loin avec les variables css, mais que c'est aussi plus approprié quand on crée des design system ou si l'on fait des gros sites.
+j'ai testé différentes choses ici, ce n'est pas parfaitement cohérent, mais je choisi d'arrêter là pour l'instant.
+
+#### conclusions
+je préfère utiliser les media querries dans les css et non dans les varialbes, cela crée bcp de confusion.
+j'aime utiliser des valeurs clées pour les espaces, les tailles, les couleurs. Cela limite et facilite les choix et assurer plus de cohérence.  
+
 ## How to use
 À définir
 

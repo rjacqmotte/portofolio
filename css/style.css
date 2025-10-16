@@ -107,6 +107,9 @@
   These are "reset" styles, fonts, global colors,
   links, etc. (no BEM here)
 ============================================================ */
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -147,6 +150,12 @@ label {
 a {
   text-decoration: none;
   color: inherit;
+  border-bottom: solid 2px transparent;
+  transition: border-color 0.3s ease-out;
+}
+
+a:hover {
+  border-bottom: solid 2px var(--color-interactive);
 }
 
 form * {
