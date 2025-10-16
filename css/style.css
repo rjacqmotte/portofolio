@@ -26,6 +26,7 @@
   --color-bg-secondary: var(--color-grey15);
 
   --color-interactive: hsl(275, 28%, 73%);
+  --color-interactive-active:  hsl(275, 19%, 48%);
   
   /* button */
   --color-border-button: var(--color-grey33);
@@ -354,6 +355,42 @@ button:hover,
   transform: translateY(-1px);
 }
 
+button:focus,
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--color-interactive);
+  border-color: var(--color-interactive);
+}
+
+button:focus-visible,
+.button:focus-visible {
+  outline: 2px solid var(--color-interactive);
+  outline-offset: 2px;
+}
+
+button:active,
+.button:active {
+  transform: translateY(1px);
+  background-color: var(--color-interactive-active);
+  border-color: var(--color-interactive-active);
+}
+
+button:disabled,
+.button:disabled {
+  background-color: var(--color-grey85);
+  border-color: var(--color-grey66);
+  color: var(--color-grey50);
+  cursor: not-allowed;
+  transform: none;
+}
+
+button:disabled:hover,
+.button:disabled:hover {
+  background-color: var(--color-grey85);
+  border-color: var(--color-grey66);
+  transform: none;
+}
+
 .button--modern {
   background-color: var(--color-background-button--modern);
   border: 1px solid var(--color-border-button-modern);
@@ -446,7 +483,7 @@ button:hover,
 }
 
 .vertical-nav__point {
-  background-color: var(--color-interactive);
+  background-color: lightgrey;
   border-radius: 50%;
   width: 10px;
   height: 10px;

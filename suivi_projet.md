@@ -8,10 +8,6 @@
 * mettre à jour le read me
 
 
-Avant le responsive :
-Définir une stratégie de breakpoints
-Ajuster les tailles de police (4rem → 2.5rem max)
-Prévoir la navigation mobile
 
 
 
@@ -23,6 +19,8 @@ Prévoir la navigation mobile
 * soigné la mise en page, choisir couluer et police, mettre des petites animations et transition, gérer les ::hover... etc...
 * lire refoctoring ui et màj le site
 * menu mobile hambergur
+* animations sympa sur le a:hover dans le main nav
+
 
 
 ## optionnel
@@ -30,7 +28,7 @@ Prévoir la navigation mobile
 
 
 ## en cours (branche porject-galery-in-row)
-* enlever et changer la couleur de point de navigation
+
 
 
 
@@ -85,6 +83,7 @@ Prévoir la navigation mobile
 * lier les bouton interne de navigation: contact et projet;
 * menu de navigaton, le rendre vivant;
 * enlever les media queries des variables;
+* enlever et changer la couleur de point de navigation
 
 
 ---
