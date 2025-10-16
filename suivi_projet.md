@@ -2,7 +2,7 @@
 
 ## A faire
 
-* menu de navigaton, le rendre vivant;
+
 
 * remplir un ou 2 projets
 * mettre à jour le markdown
@@ -30,7 +30,7 @@ Prévoir la navigation mobile
 
 
 ## en cours (branche porject-galery-in-row)
-* lier les bouton interne de navigation: contact et projet;
+
 
 
 
@@ -81,7 +81,10 @@ Prévoir la navigation mobile
 * section project, all screens
 * section contact, all screens
 * footer, all screen
-* layout, espace, diemnsion des titres, ... , all screen  
+* layout, espace, diemnsion des titres, ... , all screen
+* lier les bouton interne de navigation: contact et projet;
+* menu de navigaton, le rendre vivant;
+
 
 ---
 ## Rem
