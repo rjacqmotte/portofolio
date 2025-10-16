@@ -5,7 +5,7 @@
 
 
 * remplir un ou 2 projets
-* mettre à jour le markdown
+* mettre à jour le read me
 
 
 Avant le responsive :
@@ -30,7 +30,7 @@ Prévoir la navigation mobile
 
 
 ## en cours (branche porject-galery-in-row)
-
+* enlever les media queries des variables;
 
 
 
