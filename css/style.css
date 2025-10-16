@@ -446,7 +446,7 @@ button:hover,
 }
 
 .vertical-nav__point {
-  background-color: var(--color-secondary);
+  background-color: var(--color-interactive);
   border-radius: 50%;
   width: 10px;
   height: 10px;

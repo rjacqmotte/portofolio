@@ -98,7 +98,7 @@ const resetDots = () => {
 
 // Highlight the active dot
 const makeBigger = (element) => {
-    element.style.backgroundColor = "black";
+    element.style.backgroundColor = "var(--color-text)";
     element.style.width = "12px";
     element.style.height = "12px";
 };

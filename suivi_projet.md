@@ -30,7 +30,7 @@ Prévoir la navigation mobile
 
 
 ## en cours (branche porject-galery-in-row)
-* enlever les media queries des variables;
+* enlever et changer la couleur de point de navigation
 
 
 
@@ -84,6 +84,7 @@ Prévoir la navigation mobile
 * layout, espace, diemnsion des titres, ... , all screen
 * lier les bouton interne de navigation: contact et projet;
 * menu de navigaton, le rendre vivant;
+* enlever les media queries des variables;
 
 
 ---
