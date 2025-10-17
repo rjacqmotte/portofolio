@@ -1,9 +1,7 @@
 # Suivi de projet
 
 ## A faire
-
-
-
+* a:hover attention pour les icones!
 * remplir un ou 2 projets
 * mettre à jour le read me
 
@@ -12,14 +10,15 @@
 
 
 
+
 ## après
 * vérifier logique de classe css avec smacss et bem : à faire en fin de projet pour vérifier la cohérence de mon système
-
 * se renseigner sur les mock up, mettre un e image dans un pc ou téléphone pour présenter les applications
-* soigné la mise en page, choisir couluer et police, mettre des petites animations et transition, gérer les ::hover... etc...
 * lire refoctoring ui et màj le site
 * menu mobile hambergur
 * animations sympa sur le a:hover dans le main nav
+* soigné accessibilité et contraste
+* meta balise seo
 
 
 

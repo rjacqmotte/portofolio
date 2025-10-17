@@ -25,8 +25,8 @@
   --color-bg: hsl(40deg 20% 94%);
   --color-bg-secondary: var(--color-grey15);
 
-  --color-interactive: hsl(275, 28%, 73%);
-  --color-interactive-active:  hsl(275, 19%, 48%);
+  --color-interactive: hsl(275, 29%, 57%);
+  --color-interactive-active:  hsl(278, 31%, 43%);
   
   /* button */
   --color-border-button: var(--color-grey33);
@@ -130,6 +130,10 @@ a:hover {
   border-bottom: solid 2px var(--color-interactive);
 }
 
+.social-media__list a:hover {
+  border-bottom: solid 2px transparent;
+}
+
 form * {
   font-family: var(--font-base);
   line-height: 1.5;
@@ -146,6 +150,14 @@ textarea {
 i {
   font-size: var(--font-size-i);
   color: var(--color-secondary);
+  transition: 
+    color 0.3s ease-out,
+    transform 0.3s ease-out;
+}
+
+i.fa-brands:hover {
+  color: var(--color-interactive);
+  transform: translateY(-1px);
 }
 
 i.fa-up-right-from-square {
