@@ -684,6 +684,11 @@ button:disabled:hover,
   padding: 0 1rem;
   display: grid;
   grid-template-columns: 1fr;
+  transition: all 0.2s ease-in-out;
+}
+
+.gallery__item:hover {
+  border: solid 2px var(--color-secondary);
 }
 
 .gallery__img-container {
@@ -696,7 +701,25 @@ button:disabled:hover,
   max-width: auto;
   height: 100%;
   display: block;
+  transform: rotate(-3deg);
+  transition: transform 0.5s ease-in-out;
 }
+
+.gallery__item .gallery__info h3 {
+border-bottom: 2px solid transparent;
+width: fit-content;
+}
+
+.gallery__item:hover .gallery__info h3 {
+border-bottom: 2px solid var(--color-interactive);
+transform: scale(1.01);
+}
+
+.gallery__item:hover .gallery__img-container img {
+  transform: rotate(-2deg) scale(1.02);
+}
+
+
 
 .gallery__info {
   align-self: center;
